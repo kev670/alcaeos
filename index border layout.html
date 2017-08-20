@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alcaeos</title>
+
+		<link rel="stylesheet" href="font.css" />
+
+		<style>
+
+			@media (max-height: 600px) , (max-width: 770px) {
+			  	#content {
+			    	color: blue;
+			  	}
+			}
+
+			html, body
+			{
+				background: #f5f4f0;
+				margin: 0;
+				padding: 0;
+				height: 100%;
+			}
+
+			div 
+			{ 
+				border : 1px solid #d3d3e3 
+			}
+			
+			#container
+			{
+			    height: 100%;
+			    width: 100%;
+			    display: table;
+			    width: 800px;
+				margin: auto;
+			}
+
+			#content
+			{
+				font-family: PPETRIAL;
+				font-size: 20px;
+				text-align: center;
+						margin: 0;
+							padding: 0;
+						
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+			}
+
+					
+
+			#north    {   }        
+			#south    { margin:0;  }        
+			#east     {   display: inline-block;
+				vertical-align: middle;float:left;  }        
+			#west     { height:25em; float:right;  }        
+			#center   {}        
+			#center:after    { content:' '; clear:both; display:block; height:0; overflow:hidden }
+
+
+		</style>
+
+	</head>
+
+	<body>
+
+<div id="container">
+	<div id="content">
+
+
+
+<div id="north">Projects</div >
+<div id="east">Eeast</div>
+<div id="west">West</div>
+<div id="center"><img src = "graphics/Logo1.png" /></div>
+<div id="south">South</div>
+	</div>
+</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alcaeos</title>
+    <meta content="width=device-width, user-scalable=no" name="viewport" />
+    <link rel="stylesheet" href="fonts/font.css" />
+    <style>
+    html,
+    body {
+        background: #f5f4f0;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    #container {
+        height: 100%;
+        display: table;
+        width: 768px;
+        margin: auto;
+    }
+
+    #content {
+        font-family: PPETRIAL;
+        font-size: 25px;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    #content a {
+        transition: color 0.4s ease-out;
+        color: #777;
+        text-decoration: none;
+    }
+
+    #content a:hover {
+        transition: color 0.4s ease-out;
+        color: #ccc;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .top {}
+
+    .bottom {}
+
+    .middleItem,
+    .middleItemImage {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .middleItemImage {
+        transition: width 0.4s ease;
+        width: 600px;
+    }
+
+    @media (max-width: 766px),
+    (max-height: 552px) {
+        #container {
+            width: 100%;
+        }
+        .middleItemImage {
+            width: 200px;
+        }
+        .middle,
+        .middleItem {
+            display: block;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="content">
+            <div class="top">
+                <a href="#">About</a>
+            </div>
+            <div class="middleItem">
+                <a href="#">Projects</a>
+            </div>
+            <div class="middleItemImage">
+                <img src="images/Logo1.png" />
+            </div>
+            <div class="middleItem">
+                <a href="#">Contact</a>
+            </div>
+            <div class="bottom">
+                <a href="#">bottom</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
